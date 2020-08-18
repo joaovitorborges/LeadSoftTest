@@ -1,0 +1,59 @@
+#ListaBox{                                  /* caixa da lista ?? TRANSITION*/
+    background-color: #fff;
+    margin: auto;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#BIncluir{                 /* botão de login*/
+    float: right;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: skyblue;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 20px;
+    cursor: pointer;
+
+    font-size: 15px;
+    color: white;
+}
+
+#Model tr td button:hover{                 /* botão de login*/
+    background-color:lightskyblue;
+}
+
+#Lista{
+    width: 95%;
+    margin: auto;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+#lista tr th{                             /* header da lista*/
+    background-color: grey;
+    border: 1px solid black;
+    
+}
+#lista th:nth-last-child(2),#lista th:nth-last-child(1){    /* 2 últimas colunas*/
+    background-color: rgba(255, 255, 255, 0);
+    width: 5%;
+    border: none;
+}
+
+#lista tr td{
+    text-align: center;
+}
+
+.del,.edit{
+    background-color: skyblue;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 20px;
+    cursor: pointer;
+}

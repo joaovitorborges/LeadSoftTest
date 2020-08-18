@@ -1,0 +1,43 @@
+#LoginBox{                                  /* caixa de login ?? TRANSITION*/
+    background-color: #fff;
+    margin: auto;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#LoginInputs{                               /* table de login*/
+    margin: 40px auto 20px;
+}
+
+#LoginInputs tr td input{                  /* inputs de login*/
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 280px;
+    font-size: 16px;
+}
+
+#LoginInputs tr td button{                 /* botão de login*/
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+
+    background-color: skyblue;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 20px;
+    cursor: pointer;
+    
+    font-size: 15px;
+    color: white;
+    
+}
+
+#LoginInputs tr td button:hover{                 /* botão de login*/
+    background-color:lightskyblue;
+}
