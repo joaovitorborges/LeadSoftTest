@@ -1,11 +1,16 @@
-#ListaBox{                                  /* caixa da lista ?? TRANSITION*/
-    background-color: #fff;
+body{
+    background-color: #F1FAFF;
+}
+
+#ListaBox{                                  /* caixa da lista*/
+    background-color: #FAFAFA;
     margin: auto;
     width: 70%;
-    border: 1px solid black;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
     padding: 10px;
     text-align: center;
+    margin-top: 5%;
 }
 
 #BIncluir{                 /* botão de login*/
@@ -14,7 +19,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    background-color: skyblue;
+    background-color: #2445B3;
+    outline: none;
     border: none;
     border-radius: 3px;
     padding: 14px 20px;
@@ -23,37 +29,87 @@
     font-size: 15px;
     color: white;
 }
-
-#Model tr td button:hover{                 /* botão de login*/
-    background-color:lightskyblue;
+#BIncluir:hover{
+    background-color: #4760b3;
 }
 
-#Lista{
+#Lista{                                    /* table do conteúdo*/
     width: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
-    background-color: lightgray;
-    padding: 5px;
+    border-radius: 5px;
+    border-spacing: 0px;
+    /*border: 1px solid #2E3C5C;*/
 }
 
+/*#lista tr:nth-child(1)*/
 #lista tr th{                             /* header da lista*/
-    background-color: grey;
-    border: 1px solid black;
+    background-color: #2e3c5c;
+    font-size: 20px;
     
+    padding: 10px;
+    color: #FAFAFA;
 }
+
 #lista th:nth-last-child(2),#lista th:nth-last-child(1){    /* 2 últimas colunas*/
-    background-color: rgba(255, 255, 255, 0);
     width: 5%;
-    border: none;
+}
+
+#lista td:nth-last-child(2),#lista td:nth-last-child(1){    /* 2 últimas colunas*/
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #lista tr td{
     text-align: center;
+    color: #a7a7a7;
 }
 
-.del,.edit{
-    background-color: skyblue;
+#lista tr:nth-child(even){
+    background-color: #FFFFFF;
+}
+#lista tr:nth-child(odd){
+    background-color: #F5F5F5;
+}
+
+.del,.edit{                               /* botões de editar e excluir*/
     border: none;
     border-radius: 3px;
-    padding: 14px 20px;
+    padding: 10px 10px;
     cursor: pointer;
+    outline: none;
+}
+
+.del{
+    background-color: rgba(250, 0, 0, 0.61);
+    color: white;
+}
+.del:hover{
+    background-color: rgba(253, 34, 34, 0.61);
+}
+
+.edit{
+    background-color: #2445B3;
+    color: white;
+}
+.edit:hover{
+    background-color: #4760b3;
+    
+}
+
+#key{                                        /* aviso*/
+    color: #fff;
+    background-color: rgba(0, 250, 0, 0.61); 
+    font-size: 25px;
+    float: left;
+
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 3px;
+    padding: 12px 20px;
+
+    font-size: 20px;
+    color: white;
 }

@@ -15,10 +15,15 @@ $(document).ready(function(){
         .then(data => {
           if (data.HttpStatusCode == 400) {                  // erro
             $("#warning").html(data.Errors[0]);
-            $("#warning").css('visibility:visible');
+            $("#warning").animate({height:'35px'});
+            $("#warning").addClass('anim');
+            
           }
           else if(data.HttpStatusCode == 200){              // sucesso
-            $("#warning").html(data.Result.Authorization);
+            localStorage.setItem("auth_key",data.Result.Authorization);            
+            window.location.replace("lista.html");
+
+            
           }
         })
         .catch(error => {                           // print erro no console
