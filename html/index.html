@@ -4,11 +4,12 @@
 	<meta http-equiv="Expires" content="0" />
 
 <head>
-	<meta http-equiv="Cache-control" content="no-cache">
-
-	<meta charset="UTF-8">
     <title>LeadSoft</title>
-    
+	<link rel="icon" href="../img/favicon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../javascript/index.js"></script>
+
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -16,16 +17,17 @@
 
 <!--login -->
 	<div id = "LoginBox">
+		<div id = "warning">warning</div>
 		<table id = "LoginInputs">
 			<tr><td><div id = "warning"></div></td></tr>
 			<tr><td>
-				<input type="text" id = "email" autocomplete="email" placeholder="teste@leadsoft">
+				<input type="text" id = "email" autocomplete="email" placeholder="teste@leadsoft" value="test@leadsoft.inf.br">
 			</td></tr>
 			<tr><td>
-				<input type="password" id = "password" placeholder="Senha">
+				<input type="password" id = "password" placeholder="Senha" value="LeadSoft_Is_The_Best">
 			</td></tr>
 			<tr><td>
-					<button id = "Blogin" onclick="window.location.href='lista.html'">Login</button>
+					<button id = "Blogin" >Login</button>
 			</td></tr>
 		</table>
 	</div>

@@ -6,11 +6,11 @@
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    
+    margin-top: 15%;
 }
 
 #LoginInputs{                               /* table de login*/
-    margin: 40px auto 20px;
+    margin: 25px auto 20px;
 }
 
 #LoginInputs tr td input{                  /* inputs de login*/
@@ -40,4 +40,11 @@
 
 #LoginInputs tr td button:hover{                 /* botão de login*/
     background-color:lightskyblue;
+}
+
+#warning{                                        /* aviso*/
+    color: #fff;
+    background-color: rgba(250, 0, 0, 0.61); 
+    font-size: 25px;
+    visibility: visible;
 }
