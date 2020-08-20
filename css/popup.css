@@ -1,0 +1,102 @@
+#overlay {                                   /* overlay que escurece fundo*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#popup {
+    padding: 20px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    width: 30%;
+
+    position: fixed;
+    margin-top: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#popup h2 {
+    margin-top: 5px;
+    margin-left: 55px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#close {                                    /* X para fechar*/
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(250, 0, 0, 0.61);
+}
+#close:hover {
+    color: rgba(253, 34, 34, 0.61);
+    cursor: pointer;
+}
+
+#Tinputs{                                   /* table com campos*/
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#nome, #sobrenome, #nascimento, #altura, #peso{       /* campos*/
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+#altura, #peso, #cancelar, #salvar{
+    width: 123px;
+    margin-bottom: 15px;
+}
+
+#cancelar, #salvar{                                 /* Botões*/
+    margin-top: 5px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+#cancelar{
+    background-color: rgba(250, 0, 0, 0.61);
+}
+#cancelar:hover{
+    background-color: rgba(253, 34, 34, 0.61);
+}
+
+#salvar{
+    background-color: #3665ff;
+    color: white;
+}
+#salvar:hover{
+    background-color: #4f77fd; 
+}
+
+
+#warning{
+    width: auto;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(250, 0, 0, 0.61); 
+    font-size: 25px;
+    height: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+}

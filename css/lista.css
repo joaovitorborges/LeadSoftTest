@@ -15,38 +15,45 @@ body{
 
 #BIncluir{                 /* botão de login*/
     float: right;
-    margin-right: 5%;
+    margin-right: 28px;
     margin-top: 10px;
     margin-bottom: 10px;
-
-    background-color: #2445B3;
+    position: relative;
+    background-color: #3665ff;
     outline: none;
     border: none;
     border-radius: 3px;
     padding: 14px 20px;
+    padding-left: 30px;
     cursor: pointer;
 
-    font-size: 15px;
+    font-size: 20px;
     color: white;
 }
 #BIncluir:hover{
-    background-color: #4760b3;
+    background-color: #4f77fd;
+}
+
+#BIncluir img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right : 75%;
+    top: 35%;
 }
 
 #Lista{                                    /* table do conteúdo*/
     width: 95%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: auto;
     border-radius: 5px;
     border-spacing: 0px;
     /*border: 1px solid #2E3C5C;*/
 }
 
-/*#lista tr:nth-child(1)*/
 #lista tr th{                             /* header da lista*/
     background-color: #2e3c5c;
     font-size: 20px;
-    
     padding: 10px;
     color: #FAFAFA;
 }
@@ -61,22 +68,27 @@ body{
 
 #lista tr td{
     text-align: center;
-    color: #a7a7a7;
+    color: #868686;
+    height: 50px;
 }
 
 #lista tr:nth-child(even){
     background-color: #FFFFFF;
 }
 #lista tr:nth-child(odd){
-    background-color: #F5F5F5;
+    background-color: rgb(225, 248, 255);
 }
 
 .del,.edit{                               /* botões de editar e excluir*/
     border: none;
     border-radius: 3px;
-    padding: 10px 10px;
+    padding: 2px 2px;
     cursor: pointer;
     outline: none;
+}
+.del img, .edit img{
+    height: 35px;
+    width: 35px;
 }
 
 .del{
@@ -88,28 +100,30 @@ body{
 }
 
 .edit{
-    background-color: #2445B3;
+    background-color: #3665ff;
     color: white;
+    border-radius: 5px;
 }
 .edit:hover{
-    background-color: #4760b3;
-    
+    background-color: #4f77fd; 
 }
 
-#key{                                        /* aviso*/
+
+#key{                                        /* chave*/
     color: #fff;
-    background-color: rgba(0, 250, 0, 0.61); 
+    background-color: rgb(130, 130, 255); 
     font-size: 25px;
     float: left;
 
-    margin-left: 5%;
+    margin-left: 28px;
     margin-top: 10px;
     margin-bottom: 10px;
 
     border: none;
     border-radius: 3px;
-    padding: 12px 20px;
+    padding: 12px 10px;
+    width: 0px;
+    height: 25px;
 
     font-size: 20px;
-    color: white;
 }

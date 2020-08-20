@@ -4,19 +4,20 @@
 	<meta http-equiv="Expires" content="0" />
 
 <head>
-	<title>LeadSoft</title>
+	<title>Pessoas | LeadSoft</title>
 	<link rel="icon" href="../img/favicon.ico">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../javascript/lista.js"></script>
 	
-    <link rel="stylesheet" href="../css/lista.css">
+	<link rel="stylesheet" href="../css/lista.css">
+	<link rel="stylesheet" href="../css/popup.css">
 </head>
 
 <body>
 	<div id = "ListaBox">
 		<div id = "key"></div>
-		<button id = "BIncluir">Incluir</button>
+		<button id = "BIncluir"><img src="../img/add.png" > Incluir</button>
 
 			<table id = "Lista">
 				<tr>
@@ -28,36 +29,33 @@
 					<th></th>
 					<th></th>
 				</tr>
-				<tr>
-					<td>João</td>
-					<td>19</td>
-					<td>1,73</td>
-					<td>50,6</td>
-					<td>1,7</td>
-					<td><button class = "edit">Editar</button></td>
-					<td><button class = "del">Excluir</button></td>
-				</tr>
-				<tr>
-					<td>João</td>
-					<td>19</td>
-					<td>1,73</td>
-					<td>50,6</td>
-					<td>1,7</td>
-					<td><button class = "edit">Editar</button></td>
-					<td><button class = "del">Excluir</button></td>
-				</tr>
-				<tr>
-					<td>João</td>
-					<td>19</td>
-					<td>1,73</td>
-					<td>50,6</td>
-					<td>1,7</td>
-					<td><button class = "edit">Editar</button></td>
-					<td><button class = "del">Excluir</button></td>
-				</tr>
+								
 			</table>	
 	</div>
 
+
+	<div id="overlay"> 
+		<div id="popup">
+			<h2>Editar</h2>
+			<a id="close" >&times;</a>
+			
+			<table id = "Tinputs">
+				<tr><td><div id = "warning"></div></td></tr>
+				<tr><td colspan="2"><input type="text" id = "nome" placeholder="Nome"></td></tr>
+				<tr><td colspan="2"><input type="text" id = "sobrenome" placeholder="Sobrenome"></td></tr>
+				<tr><td colspan="2"><input type="date" id = "nascimento"></td></tr>
+				<tr>
+					<td><input type="number" id = "altura" placeholder="Altura"></td>
+					<td><input type="number" id = "peso" placeholder="Peso"></td>
+				</tr>
+				<tr>
+					<td><button id = "cancelar">Cancelar</button></td>
+					<td><button id = "salvar">Salvar</button></td>	
+				</tr>				
+			</table>	
+
+		</div>
+	</div>
 </body>
 
 </html>

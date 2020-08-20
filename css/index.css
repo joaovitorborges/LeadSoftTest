@@ -2,7 +2,7 @@ body{
     background-color: #F1FAFF;
 }
 
-#LoginBox{                                  /* caixa de login ?? TRANSITION*/
+#LoginBox{                                  /* caixa de login*/
     background-color: #FAFAFA;
     margin: auto;
     width: 30%;
@@ -11,6 +11,7 @@ body{
     padding: 10px;
     text-align: center;
     margin-top: 15%;
+    display: none;
 }
 
 #LoginInputs{                               /* table de login*/
@@ -44,7 +45,7 @@ body{
     
 }
 
-#LoginInputs tr td button:hover{                 /* botão de login*/
+#LoginInputs tr td button:hover{
     background-color:#4760b3;
 }
 

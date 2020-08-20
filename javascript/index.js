@@ -1,11 +1,12 @@
 $(document).ready(function(){
+  $("#LoginBox").fadeIn("slow");
 
     $("#Blogin").click(function () {
         fetch('http://lab.leadsoft.inf.br:5353/api/v1/Auth/LogIn',{
             method:'POST',
             headers: {
-                'Accept': 'application/json',                  // recebendo JSON
-                'Content-Type': 'application/json'             // mandando JSON
+                'Accept': 'application/problem+json',                  // recebendo JSON
+                'Content-Type': 'application/json'            // mandando JSON                
               },
             body: JSON.stringify({username: $("#email").val(),  //criando JSON com usr/pswrd
              password: $("#password").val()})
@@ -19,7 +20,7 @@ $(document).ready(function(){
             $("#warning").addClass('anim');
             
           }
-          else if(data.HttpStatusCode == 200){              // sucesso
+          else if(data.HttpStatusMessage){              // sucesso
             localStorage.setItem("auth_key",data.Result.Authorization);            
             window.location.replace("lista.html");
 
