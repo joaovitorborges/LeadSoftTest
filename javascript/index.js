@@ -3,6 +3,7 @@ $(document).ready(function () {
 
   // ============================ Autenticação
   $("#Blogin").click(function () {
+    $("#warning").removeClass('anim');
     fetch('http://lab.leadsoft.inf.br:5353/api/v1/Auth/LogIn', {
       method: 'POST',
       headers: {
@@ -19,6 +20,12 @@ $(document).ready(function () {
       .then(data => {
         if (data.HttpStatusCode == 400) {                  // erro
           $("#warning").html(data.Errors[0]);
+          $("#warning").animate({ height: '35px' });
+          $("#warning").addClass('anim');
+
+        }
+        else if (data.status == 400) {                  // erro
+          $("#warning").html("Invalid username or password!");
           $("#warning").animate({ height: '35px' });
           $("#warning").addClass('anim');
 
