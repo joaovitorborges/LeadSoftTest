@@ -1,4 +1,4 @@
-#overlay {                                   /* overlay que escurece fundo*/
+.overlay {                                   /* overlay que escurece fundo*/
     position: fixed;
     top: 0;
     bottom: 0;
@@ -8,7 +8,7 @@
     display: none;
 }
 
-#popup {
+.popup {
     padding: 20px;
     background: #FAFAFA;
     border-radius: 5px;
@@ -23,13 +23,13 @@
 
 }
 
-#popup h2 {
+.popup h2 {
     margin-top: 5px;
     margin-left: 55px;
     font-family: Tahoma, Arial, sans-serif;
 }
 
-#close {                                    /* X para fechar*/
+#close, #DelClose {                                    /* X para fechar*/
     position: absolute;
     top: 20px;
     right: 30px;
@@ -37,12 +37,12 @@
     font-weight: bold;
     color: rgba(250, 0, 0, 0.61);
 }
-#close:hover {
+#close:hover,#DelClose:hover {
     color: rgba(253, 34, 34, 0.61);
     cursor: pointer;
 }
 
-#Tinputs{                                   /* table com campos*/
+#Tinputs, #Tconfirm{                                   /* table com campos*/
     margin-left:auto;
     margin-right:auto;
 }
@@ -77,7 +77,7 @@
 #cancelar{
     background-color: rgba(250, 0, 0, 0.61);
 }
-#cancelar:hover{
+#cancelar:hover, #DelConfirmar:hover{
     background-color: rgba(253, 34, 34, 0.61);
 }
 
@@ -85,7 +85,7 @@
     background-color: #3665ff;
     color: white;
 }
-#salvar:hover, #atualizar:hover{
+#salvar:hover, #atualizar:hover, #DelCancelar:hover{
     background-color: #4f77fd; 
 }
 
@@ -100,4 +100,37 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 5px;
+}
+
+#DelCancelar{
+    margin-top: 5px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    background-color: #3665ff;
+    width: 100px;
+    padding-right: 50px;
+}
+
+#DelConfirmar{
+    margin-top: 5px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    background-color: rgba(250, 0, 0, 0.61);
+    width: 100px;
+}
+
+#cuidado{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 60px;
+    padding-bottom: 20px;
 }

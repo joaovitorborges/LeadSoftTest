@@ -6,20 +6,20 @@ $(document).ready(function () {
   $("#BIncluir").click(function () {                              // botão de incluir pessoa
     $("#header").html("Cadastrar pessoa");
     $("#sendbtn").html("<button id = \"salvar\">Salvar</button>");
-    $("#overlay").fadeIn("fast");
+    $("#form").fadeIn("fast");
 
   });
 
   $("#close").click(function () {                                 // botão de fechar overlay
     ClearInputs();
     $("#warning").animate({ height: '0px' });
-    $("#overlay").fadeOut("fast");
+    $("#form").fadeOut("fast");
     $("#warning").removeClass('anim');
   });
   $("#cancelar").click(function () {
     ClearInputs();
     $("#warning").animate({ height: '0px' });
-    $("#overlay").fadeOut("fast");
+    $("#form").fadeOut("fast");
     $("#warning").removeClass('anim');
   });
 
@@ -122,16 +122,33 @@ $(document).ready(function () {
 
 $(document).on('click', '.edit', function () {
   var ID = $(this).closest('tr').attr('id');
-  $("#header").html("Editar pessoa");
+  $("#header").html("Atualizar pessoa");
   $("#sendbtn").html("<button id = \"atualizar\">Atualizar</button>");
-  $("#overlay").fadeIn("fast");
+  $("#form").fadeIn("fast");
 });
 
-// ====================================== deletar pessoa
 $(document).on('click', '.del', function () {
   var ID = $(this).closest('tr').attr('id');
+  localStorage.setItem("delete",ID);
+  $("#confirmation").fadeIn("fast");
+});
 
-  fetch('http://lab.leadsoft.inf.br:5353/api/v1/People/' + ID, {
+$(document).on('click', '#DelClose', function () {                               // botão de fechar overlay
+  localStorage.removeItem("delete");
+  $("#confirmation").fadeOut("fast");
+});
+$(document).on('click', '#DelCancelar', function () {      
+  localStorage.removeItem("delete");
+  $("#confirmation").fadeOut("fast");
+});
+
+
+
+// ====================================== deletar pessoa
+$(document).on('click', '#DelConfirmar', function () {
+  
+  
+  fetch('http://lab.leadsoft.inf.br:5353/api/v1/People/' + localStorage.getItem("delete"), {
     method: 'DELETE',
     headers: {
       'Accept': 'application/problem+json',                  // recebendo JSON
@@ -140,15 +157,13 @@ $(document).on('click', '.del', function () {
   })
     .then(response => response.json(),
     setTimeout(function () {
-      alert("Pessoa removida com sucesso.");
+      localStorage.removeItem("delete");
+      //alert("Pessoa removida com sucesso.");
       location.reload();
     }, 200))                
     .catch(error => {                           // print erro no console
       console.log(error);
     });
-
-
-
 });
 
 

@@ -34,9 +34,9 @@
 	</div>
 
 
-	<div id="overlay"> 
-		<div id="popup">
-			<h2 id = "header">Editar</h2>
+	<div class="overlay" id = "form"> 
+		<div class="popup">
+			<h2 id = "header">Atualizar pessoa</h2>
 			<a id="close" >&times;</a>
 			
 			<table id = "Tinputs">
@@ -51,6 +51,22 @@
 				<tr>
 					<td><button id = "cancelar">Cancelar</button></td>
 					<td id = "sendbtn"><button id = "salvar">Salvar</button></td>	
+				</tr>				
+			</table>	
+
+		</div>
+	</div>
+
+
+	<div class="overlay" id = "confirmation"> 
+		<div class="popup">
+			<h2>Deletar pessoa?</h2>
+			<a id="DelClose">&times;</a>
+			<div id= "cuidado">Isso não poderá ser desfeito.</div>
+			<table id = "Tconfirm">
+				<tr>
+					<td><button id = "DelCancelar">Cancelar</button></td>
+					<td><button id = "DelConfirmar">Confirmar</button></td>	
 				</tr>				
 			</table>	
 
