@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#LoginBox").fadeIn("slow");
-  
-// ============================ Autenticação
+
+  // ============================ Autenticação
   $("#Blogin").click(function () {
     fetch('http://lab.leadsoft.inf.br:5353/api/v1/Auth/LogIn', {
       method: 'POST',
@@ -25,6 +25,7 @@ $(document).ready(function () {
         }
         else if (data.HttpStatusMessage) {              // sucesso
           localStorage.setItem("auth_key", data.Result.Authorization);
+          localStorage.setItem("InitTime", Date.now() + (60 * 60 * 1000));
           window.location.replace("lista.html");
 
 
@@ -37,3 +38,4 @@ $(document).ready(function () {
   });
 
 });
+

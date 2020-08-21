@@ -10,4 +10,10 @@ requisitos:
 - Tela de edição, onde dados do usuário selecionado podem ser editados.
 - Tela de inserção, para adicionar uma pessoa. Os dados devem ser tratados, podendo inserir apenas o tipo correto. Seleção de data.
 
+## Características
+- Login demonstra erro da api, caso ocorra
+- token e temporizador, para mostrar por quanto tempo a sessão ainda é válida
+- ao incluir ou editar, os campos incorretos são destacados
+- pequenas animações em certos elementos
+
 link para API : [Swagger UI](http://lab.leadsoft.inf.br:5353/swagger/index.html)
