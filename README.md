@@ -15,5 +15,6 @@ requisitos:
 - token e temporizador, para mostrar por quanto tempo a sessão ainda é válida
 - ao incluir ou editar, os campos incorretos são destacados
 - pequenas animações em certos elementos
+- timer de uma hora de sessão
 
 link para API : [Swagger UI](http://lab.leadsoft.inf.br:5353/swagger/index.html)
