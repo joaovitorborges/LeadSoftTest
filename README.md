@@ -12,7 +12,7 @@ requisitos:
 
 ## Características
 - Login demonstra erro da api, caso ocorra
-- token e temporizador, para mostrar por quanto tempo a sessão ainda é válida
+- timer para mostrar por quanto tempo a sessão ainda é válida
 - ao incluir ou editar, os campos incorretos são destacados
 - pequenas animações em certos elementos
 
