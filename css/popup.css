@@ -56,14 +56,15 @@
     width: 250px;
     font-size: 16px;
     border-radius: 3px;
+    
 }
 
-#altura, #peso, #cancelar, #salvar{
+#altura, #peso, #cancelar, #salvar, #atualizar{
     width: 123px;
     margin-bottom: 15px;
 }
 
-#cancelar, #salvar{                                 /* Botões*/
+#cancelar, #salvar, #atualizar{                            /* Botões*/
     margin-top: 5px;
     color: white;
     padding: 14px 20px;
@@ -80,21 +81,21 @@
     background-color: rgba(253, 34, 34, 0.61);
 }
 
-#salvar{
+#salvar, #atualizar{
     background-color: #3665ff;
     color: white;
 }
-#salvar:hover{
+#salvar:hover, #atualizar:hover{
     background-color: #4f77fd; 
 }
 
 
 #warning{
-    width: auto;
+    width: 250px;
     text-align: center;
     color: #fff;
     background-color: rgba(250, 0, 0, 0.61); 
-    font-size: 25px;
+    font-size: 20px;
     height: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
